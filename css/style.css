@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    flex: 1; /* Ensures that the body element takes up the full space */
+}
+
+header, footer {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#noteSection div, #noteDisplay p {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 80%;
+    height: 60px;
+}
+
+button {
+    margin-top: 10px;
+    width: auto; /* Allow the button to size according to its content */
+    padding: 8px 16px; /* Add some padding for better appearance */
+    background-color: #4CAF50; /* Example button color, change as needed */
+    color: white; /* Text color for the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Optional: rounded corners for the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover for visual feedback */
+}
+
+footer a, button {
+    align-self: center; /* Center-aligns buttons and footer links */
+}
+footer {
+    color: #0000FF;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+#noteDisplay p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8; /* Light grey background for each note */
+    border: 1px solid #ddd; /* Subtle border for the note box */
+    border-radius: 5px; /* Rounded corners for the boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for 3D effect */
+    white-space: pre-wrap; /* Maintains whitespace formatting of the notes */
+}
